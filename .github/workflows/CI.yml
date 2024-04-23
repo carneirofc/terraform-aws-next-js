@@ -13,11 +13,11 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: public.ecr.aws/sam/build-nodejs16.x:latest
+    container: public.ecr.aws/sam/build-nodejs20.x:latest
 
     steps:
       - name: Install yarn
-        run: npm install --global yarn@1.22.18
+        run: npm install --global yarn@1.22.22
 
       - uses: actions/checkout@v2
 
@@ -51,7 +51,7 @@ jobs:
   test-integration:
     needs: build
     runs-on: ubuntu-latest
-    container: public.ecr.aws/sam/build-nodejs16.x:latest
+    container: public.ecr.aws/sam/build-nodejs20.x:latest
     services:
       s3:
         image: registry.gitlab.com/dealmore/dealmore-build-images:s3-emulator
@@ -66,7 +66,7 @@ jobs:
 
     steps:
       - name: Install yarn
-        run: npm install --global yarn@1.22.18
+        run: npm install --global yarn@1.22.22
 
       - uses: actions/checkout@v2
 
@@ -93,10 +93,10 @@ jobs:
   test-e2e-prepare:
     needs: build
     runs-on: ubuntu-latest
-    container: public.ecr.aws/sam/build-nodejs16.x:latest
+    container: public.ecr.aws/sam/build-nodejs20.x:latest
     steps:
       - name: Install yarn
-        run: npm install --global yarn@1.22.18
+        run: npm install --global yarn@1.22.22
 
       - uses: actions/checkout@v2
 
@@ -207,7 +207,7 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v2
         with:
-          node-version: '14'
+          node-version: '20'
           cache: 'yarn'
 
       - name: Install dependencies

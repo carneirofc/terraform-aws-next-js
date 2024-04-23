@@ -9,7 +9,7 @@ export interface ConfigOutput {
     string,
     {
       handler: string;
-      runtime: 'nodejs12.x' | 'nodejs14.x' | 'nodejs16.x';
+      runtime: 'nodejs12.x' | 'nodejs14.x' | 'nodejs16.x' | 'nodejs18.x' | 'nodejs20.x';
       filename: string;
       route: string;
     }

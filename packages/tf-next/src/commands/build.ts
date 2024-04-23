@@ -115,7 +115,7 @@ function writeOutput(props: OutputProps) {
 
     config.lambdas[key] = {
       handler: lambda.handler,
-      runtime: lambda.runtime as 'nodejs12.x' | 'nodejs14.x' | 'nodejs16.x',
+      runtime: lambda.runtime as 'nodejs12.x' | 'nodejs14.x' | 'nodejs16.x' | 'nodejs18.x' | 'nodejs20.x',
       filename: path.relative(props.outputDir, zipFilename),
       route: normalizeRoute(route),
     };
