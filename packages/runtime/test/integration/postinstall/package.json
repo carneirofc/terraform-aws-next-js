@@ -3,7 +3,7 @@
     "postinstall": "node postinstall.js"
   },
   "dependencies": {
-    "next": "latest",
+    "next": "12.3.4",
     "react": "latest",
     "react-dom": "latest"
   }

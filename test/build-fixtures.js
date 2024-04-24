@@ -9,7 +9,7 @@ const tmp = require('tmp');
 const fs = require('fs-extra');
 const { parse: parseJSON } = require('hjson');
 
-const DEBUG = false;
+const DEBUG = true;
 const pathToFixtures = path.join(__dirname, 'fixtures');
 
 // Get subdirs from a given path
@@ -46,7 +46,7 @@ async function buildFixtures(debug = false) {
     // If `tf-next` is executed inside a monorepo, the workPath can be changed
     // to a subdirectory
     const realWorkDir = path.join(workDir, workPath);
-
+    console.log(command, args);
     return new Promise((resolve, reject) => {
       const child = spawn(command, args, {
         cwd: realWorkDir,
@@ -82,6 +82,7 @@ async function buildFixtures(debug = false) {
     );
 
     for (const buildItem of probesJson.builds) {
+      console.log(buildItem);
       const { src, use } = buildItem;
       const workPath = path.dirname(
         path.relative(fixture, path.join(fixture, src))

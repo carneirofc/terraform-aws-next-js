@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@jimmy/common": "^1.0.64",
-    "next": "latest",
+    "next": "12.3.4",
     "react": "latest",
     "react-dom": "latest"
   },
