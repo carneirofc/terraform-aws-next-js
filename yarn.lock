@@ -602,6 +602,19 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
+"@carneirofc/sammy@^3.0.0":
+  version "3.1.3"
+  resolved "https://registry.yarnpkg.com/@carneirofc/sammy/-/sammy-3.1.3.tgz#3ffa04a04b03757b13d030013aabc46498058d70"
+  integrity sha512-MIODleaFj7jsM7KD4u8PRkDQtfdHUG8fzJa4uwzY8LZI7xkRGlVVcAEdmWJrrH9SjdIiKukKKCyODsEUE2kaSg==
+  dependencies:
+    aws-sdk "^2.1055.0"
+    change-case "^4.1.2"
+    get-port "^5.1.1"
+    node-fetch "^2.6.7"
+    tmp "^0.2.1"
+    unzipper "^0.10.11"
+    yaml "^1.10.0"
+
 "@iarna/toml@2.2.5", "@iarna/toml@^2.2.5":
   version "2.2.5"
   resolved "https://registry.yarnpkg.com/@iarna/toml/-/toml-2.2.5.tgz#b32366c89b43c6f8cefbdefac778b9c828e3ba8c"
@@ -806,19 +819,6 @@
     rimraf "^3.0.2"
     semver "^7.3.5"
     tar "^6.1.11"
-
-"@millihq/sammy@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@millihq/sammy/-/sammy-3.0.0.tgz#23030fc8168b440781af82777fd3a982993a87cf"
-  integrity sha512-uYq80ADPvkritON12svv9lIFjaKMH59yyYcdAYIvdQNHjMuH8VY/aGAVKoq3eJrjyG6bm1Ngq+K10CIWLlMHbQ==
-  dependencies:
-    aws-sdk "^2.1055.0"
-    change-case "^4.1.2"
-    get-port "^5.1.1"
-    node-fetch "^2.6.7"
-    tmp "^0.2.1"
-    unzipper "^0.10.11"
-    yaml "^1.10.0"
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
