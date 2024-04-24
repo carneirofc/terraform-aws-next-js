@@ -147,6 +147,9 @@ jobs:
       MINIO_SECRET_KEY: testtest
 
     steps:
+      - uses: Homebrew/actions/setup-homebrew@master
+        id: set-up-homebrew
+
       - name: Setup AWS SAM
         run: |
           brew tap aws/tap
