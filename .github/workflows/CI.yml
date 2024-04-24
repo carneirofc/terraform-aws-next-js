@@ -17,7 +17,7 @@ jobs:
 
     steps:
       - name: Install yarn
-        run: npm install --global yarn@1.22.22
+        run: npm install --global yarn@1.22.19
 
       - uses: actions/checkout@v2
 
@@ -66,7 +66,7 @@ jobs:
 
     steps:
       - name: Install yarn
-        run: npm install --global yarn@1.22.22
+        run: npm install --global yarn@1.22.19
 
       - uses: actions/checkout@v2
 
@@ -96,7 +96,7 @@ jobs:
     container: public.ecr.aws/sam/build-nodejs20.x:latest
     steps:
       - name: Install yarn
-        run: npm install --global yarn@1.22.22
+        run: npm install --global yarn@1.22.19
 
       - uses: actions/checkout@v2
 
