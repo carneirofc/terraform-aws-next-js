@@ -5723,10 +5723,10 @@ turbo-windows-64@1.2.4:
   resolved "https://registry.yarnpkg.com/turbo-windows-64/-/turbo-windows-64-1.2.4.tgz#65a1ab8259515e06b1c285895a90105af9db0f4a"
   integrity sha512-F8tapVNGeWXdNSFJDybOSNWxmi6xF59oZIP7+c043D/IBvkIGTQG449QD9EdUtSq8pe20zM95VKmW9mUjqHYPQ==
 
-turbo@1.2.4:
+turbo@^1.2.4:
   version "1.2.4"
-  resolved "https://artefatos.energisa.corp:443/artifactory/api/npm/npm-prd/turbo/-/turbo-1.2.4.tgz#feeee3487bd5cafaf9cbba0f46f9b5970309d04a"
-  integrity sha1-/u7jSHvVyvr5y7oPRvm1lwMJ0Eo=
+  resolved "https://registry.yarnpkg.com/turbo/-/turbo-1.2.4.tgz#feeee3487bd5cafaf9cbba0f46f9b5970309d04a"
+  integrity sha512-3MPu+uvaKvmW5R0JncX8TJRli/5Z5Mz/H260oCfmGlEuVdvdn7Gf6ZefDnYiuDe5ofltq78SL0LTIAqLYbUmiw==
   optionalDependencies:
     turbo-darwin-64 "1.2.4"
     turbo-darwin-arm64 "1.2.4"
