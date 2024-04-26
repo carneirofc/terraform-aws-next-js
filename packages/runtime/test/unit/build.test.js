@@ -1,7 +1,7 @@
 const path = require('path');
 const os = require('os');
 const execa = require('execa');
-const { build } = require('@millihq/tf-next-runtime');
+const { build } = require('@carneirofc/tf-next-runtime');
 const { download, FileBlob } = require('@vercel/build-utils');
 
 jest.setTimeout(45000);
@@ -75,12 +75,7 @@ describe('build meta dev', () => {
     }),
   };
   const entrypoint = 'next.config.js';
-  const workPath = path.join(
-    os.tmpdir(),
-    Math.random()
-      .toString()
-      .slice(3)
-  );
+  const workPath = path.join(os.tmpdir(), Math.random().toString().slice(3));
   console.log('workPath directory: ', workPath);
 
   it('should have builder v2 response isDev=true', async () => {
@@ -102,7 +97,7 @@ describe('build meta dev', () => {
       entrypoint,
       meta,
     });
-    routes.forEach(route => {
+    routes.forEach((route) => {
       // eslint-disable-next-line no-param-reassign
       route.dest = route.dest.replace(/:\d+/, ':5000');
     });
@@ -131,6 +126,6 @@ describe('build meta dev', () => {
       'public/data.txt',
       'package.json',
     ]);
-    childProcesses.forEach(cp => cp.kill());
+    childProcesses.forEach((cp) => cp.kill());
   });
 });
