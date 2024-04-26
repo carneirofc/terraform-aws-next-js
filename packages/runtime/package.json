@@ -1,5 +1,5 @@
 {
-  "name": "@millihq/tf-next-runtime",
+  "name": "@carneirofc/tf-next-runtime",
   "version": "0.13.2",
   "license": "Apache-2.0",
   "main": "./dist/index",

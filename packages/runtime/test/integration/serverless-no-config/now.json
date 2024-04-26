@@ -3,7 +3,7 @@
   "builds": [
     {
       "src": "package.json",
-      "use": "@millihq/tf-next-runtime",
+      "use": "@carneirofc/tf-next-runtime",
       "config": { "zeroConfig": true }
     }
   ]

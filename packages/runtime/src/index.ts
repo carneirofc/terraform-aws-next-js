@@ -205,7 +205,6 @@ function startDevServer(entryPath: string, runtimeEnv: EnvConfig) {
 
   return { forked, getUrl };
 }
-
 export async function build({
   files,
   workPath,

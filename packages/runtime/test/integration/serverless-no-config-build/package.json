@@ -4,7 +4,7 @@
   },
   "dependencies": {
     "next": "12.3.4",
-    "react": "latest",
-    "react-dom": "latest"
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   }
 }

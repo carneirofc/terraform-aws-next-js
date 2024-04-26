@@ -3,7 +3,7 @@
     "now-build": "next build && next export"
   },
   "dependencies": {
-    "next": "canary",
+    "next": "12.3.4",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   }

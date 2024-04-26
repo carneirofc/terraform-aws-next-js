@@ -1,5 +1,5 @@
 {
-  "name": "@millihq/terraform-next-deploy-trigger",
+  "name": "@carneirofc/terraform-next-deploy-trigger",
   "version": "0.13.2",
   "description": "Deploy trigger component of Terraform Next.js module for AWS",
   "main": "index.js",
