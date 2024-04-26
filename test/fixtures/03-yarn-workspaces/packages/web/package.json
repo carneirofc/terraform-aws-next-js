@@ -10,7 +10,7 @@
     "@jimmy/common": "^1.0.64",
     "next": "12.3.4",
     "react": "^16.8.6",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.8.6"
   },
   "devDependencies": {
     "@types/node": "^12.12.14",
